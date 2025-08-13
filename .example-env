@@ -1,0 +1,39 @@
+# PolyDrive Environment Configuration
+
+# Application
+NODE_ENV=development
+PORT=3000
+
+# Database Configuration
+DATABASE_HOST=postgres
+DATABASE_PORT=5432
+DATABASE_USER=polydrive
+DATABASE_PASSWORD=polydrive123
+DATABASE_NAME=polydrive
+
+# JWT Authentication
+JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+JWT_EXPIRES_IN=7d
+
+# Storage Configuration
+STORAGE_TYPE=s3
+
+# Local Storage Configuration
+LOCAL_STORAGE_PATH=./storage
+
+# S3 Storage Configuration (for AWS S3 or MinIO - local)
+S3_ENDPOINT=http://minio:9000
+S3_ACCESS_KEY=minioadmin
+S3_SECRET_KEY=minioadmin
+S3_BUCKET=polydrive
+S3_REGION=us-east-1
+
+# Database Storage Configuration
+# (No additional config needed when STORAGE_TYPE=database)
+
+# FTP Storage Configuration
+FTP_HOST=ftp
+FTP_PORT=21
+FTP_USER=ftpuser
+FTP_PASSWORD=ftppass
+
